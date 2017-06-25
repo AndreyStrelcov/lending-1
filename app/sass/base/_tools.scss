@@ -1,0 +1,23 @@
+/* Clearfix*/
+@mixin clearing {
+	&::before,&::after {
+  		content: "";
+  		display: table;
+	}
+	&::after {clear: both;}
+	& {clear: both; *zoom: 1;}
+}	
+.clearfix {
+	@include clearing;
+}
+@mixin vendor($property, $value){
+ 	-webkit-#{$property}:$value;
+    -moz-#{$property}:$value;
+ 	#{$property}:$value;
+}
+/* Box-sizing*/
+*,
+*:before,
+*:after {
+	@include vendor(box-sizing,border-box);
+}
