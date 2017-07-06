@@ -1,0 +1,22 @@
+{
+  "name": "pattern",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andrey Strelcov <astrelcov@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AndreyStrelcov/lending-1",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "magnific-popup": "^1.1.0"
+  }
+}

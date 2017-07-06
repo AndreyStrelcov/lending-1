@@ -1,5 +1,6 @@
 /*---Base Style---*/
-.font-family--base {
-	font-family: "Roboto",sans-serif;
-  	font-size: 14px;
-}  	
+.font-base {
+	font-family: $font-sec;
+	font-size: $font-menu;
+	font-weight: $regular;
+}
