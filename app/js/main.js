@@ -1,7 +1,14 @@
-(function($){
   $(function() {
     $('.menu-block--toggle').on('click', function() {
-      $(this).closest('.menu-block').toggleClass('menu_state_open');
+      $('.menu-nav--list').slideToggle(400, function(){
+      	if($(this).css('display') === 'none'){
+      		$(this).removeAttr('style');
+      	}
+      });
     });
   });
-})(jQuery);
+  
+  // $(function()
+  //       {
+  //           alert('Подключена последняя версия jQuery через Google хостинг');
+  //       });
