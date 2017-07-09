@@ -163,16 +163,14 @@ a {
   width: 22px;
   height: 14px;
   position: relative;
-  cursor: pointer;
-  float: right; }
+  cursor: pointer; }
   .menu-block--toggle .menu-toggle--icon {
     display: block;
     position: absolute;
     height: 2px;
     width: 100%;
     left: 0px;
-    background-color: #fff;
-    opacity: 1; }
+    background-color: #fff; }
 
 .menu-toggle--icon:nth-child(1) {
   top: 0px; }
@@ -188,7 +186,18 @@ a {
   .btn-block, .info-block {
     display: none; }
   .menu-nav--list {
-    display: none; }
+    position: fixed;
+    top: 66px;
+    left: 100px;
+    right: 0px; }
+  .menu-item--link {
+    line-height: 30px; }
+  .menu-list--item {
+    display: block;
+    background-color: #4183f3;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    height: 50px; }
   .menu-block--toggle {
     display: block; }
   .menu-block {
