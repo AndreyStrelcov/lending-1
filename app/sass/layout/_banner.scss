@@ -1,4 +1,82 @@
 /* Banner block*/
-.banner-foto {
+.ban-main {
 	width: 100%;
+	height: 600px;
+	background: url("../img/banner-color.jpg") no-repeat;
+	-webkit-background-size: cover;
+	        background-size: cover;
+}
+.ban-main--content {
+	padding: 200px 80px 80px 80px;
 }	
+.ban-main--title {
+	text-align: center;
+	padding: 0;
+	line-height: 0.75;
+}
+.ban-main--title {
+	color: #fff;
+		h1 {
+			font-size: $font-action;
+			font-family: $font-primary;
+			font-weight: $bold;
+			/* line-height: 44px;*/
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 44px;
+			font-family: $font-primary;
+			font-weight: $regular;
+		}
+}
+.ban-main-form--wrapper {
+	margin: 50px auto;
+	max-width: 585px;
+}
+.ban-form--title {
+	font-weight: $medium;
+	font-size: 20px;
+	color: #fff;
+	font-family: $font-primary;
+}
+.ban-form--box {
+	padding-top: 25px;
+}
+/* .ban-box--field {*/
+/* 	display: inline-block;*/
+/* }*/
+.ban-field--phone {
+	/* margin-right: 19px;*/
+	float: left;
+	min-width: 248px;
+	padding: 13px 40px 13px 10px;
+	color: #333c4e;
+	font-family: $font-primary;
+	font-size: 16px;
+	border: none;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+}
+.ban-field--action {
+	float: right;
+	cursor: pointer;
+	padding: 12px 70px;
+	color: #fff;
+	font-family: $font-primary;
+	font-weight: $bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	background-color: #4acc8e;
+	border: none;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+		&:hover {background-color: #81e8b7;}        
+}
+/*-----Mobile banner-----*/
+@media screen and (max-width: 480px) {
+	.ban-main {
+		background: url("../img/banner-mobile-color.jpg") no-repeat;
+		height: 450px;
+	}
+}

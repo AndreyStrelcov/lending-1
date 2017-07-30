@@ -61,7 +61,9 @@ a {
 /* Grid*/
 .container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px; }
 
 /* Clearfix*/
 .clearfix::before, .clearfix::after {
@@ -143,8 +145,8 @@ a {
   float: right;
   padding: 12px 14px;
   background-color: #e64a1a;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   margin-top: 17px;
   cursor: pointer;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
@@ -220,5 +222,92 @@ a {
     display: none; } }
 
 /* Banner block*/
-.banner-foto {
-  width: 100%; }
+.ban-main {
+  width: 100%;
+  height: 600px;
+  background: url("../img/banner-color.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.ban-main--content {
+  padding: 200px 80px 80px 80px; }
+
+.ban-main--title {
+  text-align: center;
+  padding: 0;
+  line-height: 0.75; }
+
+.ban-main--title {
+  color: #fff; }
+  .ban-main--title h1 {
+    font-size: 46px;
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-weight: 700;
+    /* line-height: 44px;*/
+    margin-bottom: 20px; }
+  .ban-main--title p {
+    font-size: 44px;
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-weight: 400; }
+
+.ban-main-form--wrapper {
+  margin: 50px auto;
+  max-width: 585px; }
+
+.ban-form--title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Lato", "Open Sans", sans-serif; }
+
+.ban-form--box {
+  padding-top: 25px; }
+
+/* .ban-box--field {*/
+/* 	display: inline-block;*/
+/* }*/
+.ban-field--phone {
+  /* margin-right: 19px;*/
+  float: left;
+  min-width: 248px;
+  padding: 13px 40px 13px 10px;
+  color: #333c4e;
+  font-family: "Lato", "Open Sans", sans-serif;
+  font-size: 16px;
+  border: none;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+.ban-field--action {
+  float: right;
+  cursor: pointer;
+  padding: 12px 70px;
+  color: #fff;
+  font-family: "Lato", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: #4acc8e;
+  border: none;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  .ban-field--action:hover {
+    background-color: #81e8b7; }
+
+/*-----Mobile banner-----*/
+@media screen and (max-width: 480px) {
+  .ban-main {
+    background: url("../img/banner-mobile-color.jpg") no-repeat;
+    height: 450px; } }
+
+.benefit-block {
+  margin-top: 100px; }
+
+.benefit-title {
+  text-align: center;
+  font-size: 38px;
+  font-family: "Lato", "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #333c4e;
+  text-transform: uppercase; }
