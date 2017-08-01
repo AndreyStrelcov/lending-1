@@ -62,8 +62,8 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px; }
+  padding-right: 15px;
+  padding-left: 15px; }
 
 /* Clearfix*/
 .clearfix::before, .clearfix::after {
@@ -204,10 +204,10 @@ a {
   .menu-block--toggle {
     display: block; }
   .menu-block {
-    padding: 25px 10px 25px 0;
+    padding: 25px 0;
     float: right; }
   .logo-block {
-    padding: 18px 0 18px 10px; } }
+    padding: 18px 0; } }
 
 @media screen and (max-width: 767px) {
   .btn-block, .info-block {
@@ -257,10 +257,10 @@ a {
 .ban-form--title {
   font-weight: 500;
   font-size: 20px;
-  color: #fff;
+  color: #b3cdfa;
   font-family: "Lato", "Open Sans", sans-serif; }
 
-.ban-form--box {
+.ban-form--block {
   padding-top: 25px; }
 
 /* .ban-box--field {*/
@@ -290,6 +290,8 @@ a {
   letter-spacing: 0.5px;
   background-color: #4acc8e;
   border: none;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
   -webkit-border-radius: 4px;
   border-radius: 4px; }
   .ban-field--action:hover {
@@ -299,7 +301,30 @@ a {
 @media screen and (max-width: 480px) {
   .ban-main {
     background: url("../img/banner-mobile-color.jpg") no-repeat;
-    height: 450px; } }
+    height: 450px; }
+  .ban-main--content {
+    padding: 50px 5px 20px 5px; }
+  .ban-main--title h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1; }
+  .ban-main--title p {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1; }
+  .ban-form--title {
+    font-size: 16px;
+    color: #b3cdfa; }
+  .ban-field--phone {
+    float: none;
+    margin: 0 auto 10px;
+    width: 100%; }
+  .ban-field--action {
+    float: none;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center; } }
 
 .benefit-block {
   margin-top: 100px; }
@@ -311,3 +336,10 @@ a {
   font-weight: 400;
   color: #333c4e;
   text-transform: uppercase; }
+
+@media screen and (max-width: 480px) {
+  .benefit-title {
+    font-size: 26px;
+    line-height: 1; }
+  .benefit-block {
+    margin-top: 50px; } }

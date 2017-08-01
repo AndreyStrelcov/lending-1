@@ -9,3 +9,12 @@
 	color: $text-title;
 	text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+	.benefit-title {
+		font-size: 26px;
+		line-height: 1;
+	}
+	.benefit-block {
+		margin-top: 50px;
+	}
+}

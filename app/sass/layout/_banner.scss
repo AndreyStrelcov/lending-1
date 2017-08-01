@@ -36,10 +36,10 @@
 .ban-form--title {
 	font-weight: $medium;
 	font-size: 20px;
-	color: #fff;
+	color: $hover-menu;
 	font-family: $font-primary;
 }
-.ban-form--box {
+.ban-form--block {
 	padding-top: 25px;
 }
 /* .ban-box--field {*/
@@ -69,6 +69,8 @@
 	letter-spacing: 0.5px;
 	background-color: #4acc8e;
 	border: none;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24);
+          box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24);
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
 		&:hover {background-color: #81e8b7;}        
@@ -78,5 +80,36 @@
 	.ban-main {
 		background: url("../img/banner-mobile-color.jpg") no-repeat;
 		height: 450px;
+	}
+	.ban-main--content {
+        padding: 50px 5px 20px 5px;
+	}
+	.ban-main--title {
+		h1 {
+			font-size: 34px;
+			margin-bottom: 20px;
+			font-weight: $bold;
+			line-height: 1;
+		}
+		p {
+			font-size: 26px;
+			font-weight: $regular;
+			line-height: 1;
+		}
+	}
+	.ban-form--title {
+		font-size: 16px;
+		color: $hover-menu;
+	}
+	.ban-field--phone {
+		float: none;
+		margin: 0 auto 10px;
+		width: 100%;
+	}
+	.ban-field--action {
+		float: none;
+		width: 100%;
+		padding: 12px 0;
+		text-align: center;
 	}
 }
