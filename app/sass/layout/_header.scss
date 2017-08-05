@@ -35,8 +35,8 @@
 }
 /* Menu*/
 .menu-block {
-  float: left;
-  padding-left: 175px;
+  float: right;
+  margin-right: 20px;
 }
 .menu-list--item {
   display: inline-block;
@@ -50,7 +50,7 @@
   letter-spacing: 0.025em;
   font-size: 15px;    
   color: $hover-menu;
-  line-height: 74px;
+  line-height: 72px;
     &:hover { color: #fff;}
 }
 /* Button*/
@@ -100,6 +100,84 @@
     top: 12px;}
 }
 /*-----Mobile header-----*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-block {
+     margin-right: 10px;
+  }
+  .menu-list--item {
+     padding: 0 10px;
+  }
+  .info-block {
+     padding: 20px 0 20px 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo-block--link {
+     width: 178px;
+     height: 27px;
+     border-right: none;
+  }
+  .info-block {
+     float: left;
+     padding: 20px 0 20px 7px;
+     color: #fff;
+     span {
+        font-weight: $thin;
+        font-size: 12px;
+      }
+  }
+  .menu-block {
+     margin-right: 5px;
+  }
+  .menu-list--item {
+     padding: 0 3px;
+    }
+  .menu-item--link {
+     font-weight: $bold;
+     font-size: 14px;    
+     text-transform: capitalize;
+     line-height: 68px;
+  }
+  .btn-block {
+     padding: 10px 12px;
+  }
+  .btn-block--link {
+     font-weight: $regular;
+     font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btn-block,.info-block {
+     display: none;
+  }
+  .menu-nav--list {
+    position: fixed;
+    top: 66px;
+    left: 100px;
+    right: 0px;
+    display: none;
+  }
+  .menu-item--link {
+    line-height: 30px;
+  }
+  .menu-list--item {
+    display: block;
+    background-color: $primary-color;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    height: 50px;
+  }
+  .menu-block--toggle {
+    display: block;
+  }
+  .menu-block {
+      padding: 25px 0;
+      float: right;
+  }
+  .logo-block {
+    padding: 18px 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .btn-block,.info-block {
       display: none;
@@ -130,20 +208,5 @@
   }
   .logo-block {
     padding: 18px 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .btn-block,.info-block {
-      display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .btn-block,.info-block {
-      display: none;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .btn-block,.info-block {
-      display: none;
   }
 }

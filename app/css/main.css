@@ -121,8 +121,8 @@ a {
 
 /* Menu*/
 .menu-block {
-  float: left;
-  padding-left: 175px; }
+  float: right;
+  margin-right: 20px; }
 
 .menu-list--item {
   display: inline-block;
@@ -136,7 +136,7 @@ a {
   letter-spacing: 0.025em;
   font-size: 15px;
   color: #b3cdfa;
-  line-height: 74px; }
+  line-height: 72px; }
   .menu-item--link:hover {
     color: #fff; }
 
@@ -184,7 +184,42 @@ a {
   top: 12px; }
 
 /*-----Mobile header-----*/
-@media screen and (max-width: 480px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-block {
+    margin-right: 10px; }
+  .menu-list--item {
+    padding: 0 10px; }
+  .info-block {
+    padding: 20px 0 20px 10px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo-block--link {
+    width: 178px;
+    height: 27px;
+    border-right: none; }
+  .info-block {
+    float: left;
+    padding: 20px 0 20px 7px;
+    color: #fff; }
+    .info-block span {
+      font-weight: 100;
+      font-size: 12px; }
+  .menu-block {
+    margin-right: 5px; }
+  .menu-list--item {
+    padding: 0 3px; }
+  .menu-item--link {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 68px; }
+  .btn-block {
+    padding: 10px 12px; }
+  .btn-block--link {
+    font-weight: 400;
+    font-size: 12px; } }
+
+@media screen and (max-width: 767px) {
   .btn-block, .info-block {
     display: none; }
   .menu-nav--list {
@@ -209,17 +244,30 @@ a {
   .logo-block {
     padding: 18px 0; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .btn-block, .info-block {
-    display: none; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .btn-block, .info-block {
-    display: none; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .btn-block, .info-block {
-    display: none; } }
+    display: none; }
+  .menu-nav--list {
+    position: fixed;
+    top: 66px;
+    left: 100px;
+    right: 0px;
+    display: none; }
+  .menu-item--link {
+    line-height: 30px; }
+  .menu-list--item {
+    display: block;
+    background-color: #4183f3;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    height: 50px; }
+  .menu-block--toggle {
+    display: block; }
+  .menu-block {
+    padding: 25px 0;
+    float: right; }
+  .logo-block {
+    padding: 18px 0; } }
 
 /* Banner block*/
 .ban-main {
@@ -325,6 +373,18 @@ a {
     width: 100%;
     padding: 12px 0;
     text-align: center; } }
+
+@media screen and (max-width: 767px) {
+  .ban-main {
+    background: url("../img/banner-tablet-color.jpg") no-repeat;
+    height: 450px; }
+  .ban-main--content {
+    padding: 100px 5px 20px 5px; }
+  .ban-field--phone {
+    min-width: 400px; }
+  .ban-field--action {
+    min-width: 400px;
+    margin: 0 auto; } }
 
 .benefit-block {
   margin-top: 100px; }

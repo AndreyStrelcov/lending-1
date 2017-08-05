@@ -113,3 +113,19 @@
 		text-align: center;
 	}
 }
+@media screen and (max-width: 767px) {
+	.ban-main {
+		background: url("../img/banner-tablet-color.jpg") no-repeat;
+		height: 450px;
+	}
+	.ban-main--content {
+        padding: 100px 5px 20px 5px;
+	}
+	.ban-field--phone {
+		min-width: 400px;
+	}
+	.ban-field--action {
+		min-width: 400px;
+		margin: 0 auto;
+	}
+}
