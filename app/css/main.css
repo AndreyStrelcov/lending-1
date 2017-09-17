@@ -475,7 +475,9 @@ a {
     font-size: 26px;
     line-height: 1; }
   .benefit-block {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .benefit-row {
+    float: none; } }
 
 .windows-block {
   padding: 85px 0 85px; }
