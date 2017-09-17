@@ -1,13 +1,48 @@
 .benefit-block {
-	margin-top: 100px;
+	padding: 85px 0 85px;
+	background-color: $benefit-color;
 }
-.benefit-title {
+.benefit-item {
+	padding-top: 70px;
+}
+.benefit-row {
 	text-align: center;
-	font-size: $font-title;
-	font-family: $font-primary;
-	font-weight: $regular;
-	color: $text-title;
-	text-transform: uppercase;
+	li {
+		display: inline-block;
+	}
+	img {
+			padding: 35px 0 35px 10px;
+			float: left;
+		}
+}
+.benefit-text {
+	float: left;
+	padding-left: 10px;
+	text-align: left;
+	font-family: $font-sec;
+	h5 {
+			font-size: 16px;
+			text-transform: uppercase;
+			color: $primary-color;
+			padding-top: 35px;
+		}
+	span {
+			font-size: 16px;
+			color: #6b707b;
+			padding-top: 20px;
+			display: block;
+		}		
+}
+.item-block {
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.08);
+	        box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.08);
+}
+.benefit-item--quality {
+	margin-right: 1.5%;
+}
+.benefit-item--install {
+	margin-right: 1.5%;
 }
 @media screen and (max-width: 480px) {
 	.benefit-title {

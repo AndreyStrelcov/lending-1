@@ -2,7 +2,7 @@
 .ban-main {
 	width: 100%;
 	height: 600px;
-	background: url("../img/banner-color.jpg") no-repeat;
+	background: url("../img/banner-monitor.jpg") no-repeat;
 	-webkit-background-size: cover;
 	        background-size: cover;
 }
@@ -54,8 +54,8 @@
 	font-family: $font-primary;
 	font-size: 16px;
 	border: none;
-	-webkit-border-radius: 4px;
-	        border-radius: 4px;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
 }
 .ban-field--action {
 	float: right;
@@ -71,14 +71,14 @@
 	border: none;
 	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24);
           box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24);
-	-webkit-border-radius: 4px;
-	        border-radius: 4px;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
 		&:hover {background-color: #81e8b7;}        
 }
 /*-----Mobile banner-----*/
 @media screen and (max-width: 480px) {
 	.ban-main {
-		background: url("../img/banner-mobile-color.jpg") no-repeat;
+		background: url("../img/banner-mobile.jpg") no-repeat;
 		height: 450px;
 	}
 	.ban-main--content {
@@ -115,7 +115,7 @@
 }
 @media screen and (max-width: 767px) {
 	.ban-main {
-		background: url("../img/banner-tablet-color.jpg") no-repeat;
+		background: url("../img/banner-mobile.jpg") no-repeat;
 		height: 450px;
 	}
 	.ban-main--content {

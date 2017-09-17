@@ -1,6 +1,8 @@
 /*-----Header-----*/
 .header-block {
-  background-color: $primary-color;
+  background-color: #356AC6;
+  border-bottom: 1px solid $line-header;
+  /* position: fixed;*/
 }
 .logo-block {
   float: left;
@@ -25,7 +27,7 @@
 .info-block {
   float: left;
   padding: 20px 0 20px 20px;
-  color: #fff;
+  color: #b3cdfa;
 }
 .info-block--city,.info-block--phone {
   display: block;
@@ -41,7 +43,7 @@
 .menu-list--item {
   display: inline-block;
   padding: 0 15px;
-  /* border-bottom: 4px solid $green;*/
+    &:hover {border-bottom: 3px solid $green;}
   height: 74px;
 }
 .menu-item--link {
@@ -53,14 +55,29 @@
   line-height: 72px;
     &:hover { color: #fff;}
 }
-/* Button*/
+/* Button top*/
+.btn-top {
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+  right: 40px;
+  bottom: 20px;
+  padding: 5px 10px;
+  background-color: $green;
+  border: none;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+   display: none;
+}
+/* Button menu*/
 .btn-block {
   float: right;
   padding: 12px 14px;
   background-color: $buttons-color;
     &:hover {background-color: $hover-btn;}
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   margin-top: 17px;
   cursor: pointer;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24);

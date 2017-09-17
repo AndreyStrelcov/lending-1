@@ -1,0 +1,49 @@
+.windows-block {
+	padding: 85px 0 85px;
+}
+.title-block {
+	text-align: center;
+	font-family: $font-primary;
+	color: $text-title;
+	text-transform: uppercase;
+}	
+.headline {
+			font-size: $font-title;
+	        font-weight: $regular;
+}
+.subtitle {
+			font-size: $font-title-sec;
+			font-weight: $regular;
+			padding-top: 30px;
+}
+.windows-item {
+	text-align: center;
+	padding-top: 70px;
+}
+.windows-row {
+	margin: 0 -3%;
+	li {
+		display: inline-block;
+		width: 30%;
+		margin: 0 1%;
+			img {
+				width: 100%;
+			}
+	}
+	h3 {
+		padding-top: 70px;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #4183f3;
+	}
+	span {
+		padding-top: 35px;
+		color: #6b707b;
+		font-size: 16px;
+	}
+	div {
+		width: 95%;
+		padding-top: 35px;
+	}
+}
+

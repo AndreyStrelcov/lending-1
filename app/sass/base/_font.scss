@@ -4,3 +4,19 @@
 	font-size: $font-menu;
 	font-weight: $regular;
 }
+/*---Title-block---*/
+.title-block {
+	text-align: center;
+	font-family: $font-primary;
+	color: $text-title;
+	text-transform: uppercase;
+}	
+.headline {
+			font-size: $font-title;
+	        font-weight: $regular;
+}
+.subtitle {
+			font-size: $font-title-sec;
+			font-weight: $regular;
+			padding-top: 30px;
+}
