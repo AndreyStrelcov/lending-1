@@ -1,22 +1,54 @@
 /*---Base Style---*/
 .font-base {
 	font-family: $font-sec;
-	font-size: $font-menu;
+	font-size: 16px;
 	font-weight: $regular;
 }
 /*---Title-block---*/
 .title-block {
 	text-align: center;
-	font-family: $font-primary;
+	font-family: $font-test;
 	color: $text-title;
 	text-transform: uppercase;
+	 font-weight: $medium;
+	 margin-bottom: 70px;
 }	
-.headline {
+.main-headline {
 			font-size: $font-title;
-	        font-weight: $regular;
 }
-.subtitle {
+.main-subtitle {
 			font-size: $font-title-sec;
-			font-weight: $regular;
 			padding-top: 30px;
+}
+/*---Descrription-block---*/
+.desc-headline {
+	text-transform: uppercase;
+	color: $desc-headline;
+	font-size: $font-form;
+	font-weight: $medium;
+	letter-spacing: 0.5px;
+	margin: 70px 0 35px 0;
+}
+.desc-subtitle {
+	color: $desc-color;
+}
+/*---Foto-block---*/
+.foto-block {
+	width: 100%;
+	display: block;
+}
+@media screen and (max-width: 480px) {
+	.title-block {
+		margin-bottom: 35px;
+	}
+	.main-headline {
+		font-size: 24px;
+	}
+	.main-subtitle {
+		font-size: 16px;
+		display: none;
+	}
+	.desc-headline {
+		margin: 35px 0 15px 0;
+	}
 }

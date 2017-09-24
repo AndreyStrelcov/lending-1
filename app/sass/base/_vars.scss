@@ -9,18 +9,22 @@ $fone-footer: #1f2f46;
 $hover-menu: #b3cdfa;
 $hover-btn: #f84109;
 $benefit-color: #ecf0f5;
+$desc-color: #6b707b;
+$desc-headline: #0373cc;
 
 $font-menu: 14px; 
 $font-action: 46px; 
 $font-sec-action: 26px;
-$font-form: 16px;
+$font-form: 16px; 
 $font-title: 32px;
 $font-title-sec: 22px;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
 $font-primary: "Lato","Open Sans",sans-serif;
 $font-sec: "Roboto", "Open Sans", sans-serif;
+$font-test: 'Montserrat', sans-serif;
 
 $thin: 100;
 $light: 300;
@@ -30,7 +34,3 @@ $bold: 700;
 
 
 
-/* 1)Сделать классы для кнопок: один общий и остальные специфичные;*/
-/* // 2)Изображению задаем   max-width;*/
-/* 3)*/
-/*  */

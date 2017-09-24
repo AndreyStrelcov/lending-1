@@ -1,4 +1,4 @@
-/* Clearfix*/
+/*---Clearfix---*/
 @mixin clearing {
 	&::before,&::after {
   		content: "";
@@ -15,9 +15,10 @@
     -moz-#{$property}:$value;
  	#{$property}:$value;
 }
-/* Box-sizing*/
+/*---Box-sizing---*/
 *,
 *:before,
 *:after {
 	@include vendor(box-sizing,border-box);
 }
+

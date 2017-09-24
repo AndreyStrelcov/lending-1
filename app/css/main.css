@@ -1,10 +1,10 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,31 +53,55 @@ a {
   text-transform: uppercase;
   text-decoration: none; }
 
-/* 1)Сделать классы для кнопок: один общий и остальные специфичные;*/
-/* // 2)Изображению задаем   max-width;*/
-/* 3)*/
-/*  */
 /*---Base Style---*/
 .font-base {
   font-family: "Roboto", "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400; }
 
 /*---Title-block---*/
 .title-block {
   text-align: center;
-  font-family: "Lato", "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #333c4e;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 70px; }
 
-.headline {
-  font-size: 32px;
-  font-weight: 400; }
+.main-headline {
+  font-size: 32px; }
 
-.subtitle {
+.main-subtitle {
   font-size: 22px;
-  font-weight: 400;
   padding-top: 30px; }
+
+/*---Descrription-block---*/
+.desc-headline {
+  text-transform: uppercase;
+  color: #0373cc;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 70px 0 35px 0; }
+
+.desc-subtitle {
+  color: #6b707b; }
+
+/*---Foto-block---*/
+.foto-block {
+  width: 100%;
+  display: block; }
+
+@media screen and (max-width: 480px) {
+  .title-block {
+    margin-bottom: 35px; }
+  .main-headline {
+    font-size: 24px; }
+  .main-subtitle {
+    font-size: 16px;
+    display: none; }
+  .desc-headline {
+    margin: 35px 0 15px 0; } }
 
 /* Grid*/
 .container {
@@ -86,10 +110,19 @@ a {
   padding-right: 15px;
   padding-left: 15px; }
 
-.col-1-3 {
-  width: 32%; }
+.them-block {
+  padding: 85px 0 85px; }
 
-/* Clearfix*/
+.col-1-3 {
+  width: 31%;
+  display: inline-block;
+  margin: 0 1%; }
+
+.wrapper-row {
+  text-align: center;
+  margin: 0 -1%; }
+
+/*---Clearfix---*/
 .clearfix::before, .clearfix::after {
   content: "";
   display: table; }
@@ -101,7 +134,7 @@ a {
   clear: both;
   *zoom: 1; }
 
-/* Box-sizing*/
+/*---Box-sizing---*/
 *,
 *:before,
 *:after {
@@ -137,7 +170,8 @@ a {
 .info-block {
   float: left;
   padding: 20px 0 20px 20px;
-  color: #b3cdfa; }
+  color: #b3cdfa;
+  font-size: 14px; }
 
 .info-block--city, .info-block--phone {
   display: block; }
@@ -199,7 +233,8 @@ a {
 .btn-block--link {
   color: #fff;
   font-family: "Lato", "Open Sans", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 14px; }
 
 /*Toggle*/
 .menu-block--toggle {
@@ -428,47 +463,32 @@ a {
     min-width: 400px;
     margin: 0 auto; } }
 
+/*----------Benefit-block----------*/
 .benefit-block {
-  padding: 85px 0 85px;
   background-color: #ecf0f5; }
 
-.benefit-item {
-  padding-top: 70px; }
-
-.benefit-row {
-  text-align: center; }
-  .benefit-row li {
-    display: inline-block; }
-  .benefit-row img {
-    padding: 35px 0 35px 10px;
-    float: left; }
+.benefit-item--icon {
+  float: left;
+  padding: 35px 0 35px 10px; }
 
 .benefit-text {
   float: left;
-  padding-left: 10px;
-  text-align: left;
-  font-family: "Roboto", "Open Sans", sans-serif; }
-  .benefit-text h5 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #4183f3;
-    padding-top: 35px; }
-  .benefit-text span {
-    font-size: 16px;
-    color: #6b707b;
-    padding-top: 20px;
-    display: block; }
+  width: 62%;
+  margin-left: 10px;
+  text-align: left; }
 
-.item-block {
+.benefit-headline {
+  text-transform: uppercase;
+  color: #0373cc;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding-top: 35px; }
+
+.them-shadow {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.08); }
-
-.benefit-item--quality {
-  margin-right: 1.5%; }
-
-.benefit-item--install {
-  margin-right: 1.5%; }
 
 @media screen and (max-width: 480px) {
   .benefit-title {
@@ -477,45 +497,11 @@ a {
   .benefit-block {
     margin-top: 50px; } }
 
-.windows-block {
-  padding: 85px 0 85px; }
+/*----------Windows-block----------*/
+@media screen and (max-width: 480px) {
+  .col-1-3 {
+    display: block;
+    width: 100%; } }
 
-.title-block {
-  text-align: center;
-  font-family: "Lato", "Open Sans", sans-serif;
-  color: #333c4e;
-  text-transform: uppercase; }
-
-.headline {
-  font-size: 32px;
-  font-weight: 400; }
-
-.subtitle {
-  font-size: 22px;
-  font-weight: 400;
-  padding-top: 30px; }
-
-.windows-item {
-  text-align: center;
-  padding-top: 70px; }
-
-.windows-row {
-  margin: 0 -3%; }
-  .windows-row li {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1%; }
-    .windows-row li img {
-      width: 100%; }
-  .windows-row h3 {
-    padding-top: 70px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #4183f3; }
-  .windows-row span {
-    padding-top: 35px;
-    color: #6b707b;
-    font-size: 16px; }
-  .windows-row div {
-    width: 95%;
-    padding-top: 35px; }
+.windows-item--desc {
+  padding: 0 20px; }
