@@ -7,7 +7,7 @@
 /*---Title-block---*/
 .title-block {
 	text-align: center;
-	font-family: $font-test;
+	font-family: $font-primary;
 	color: $text-title;
 	text-transform: uppercase;
 	 font-weight: $medium;
@@ -23,14 +23,14 @@
 /*---Descrription-block---*/
 .desc-headline {
 	text-transform: uppercase;
-	color: $desc-headline;
-	font-size: $font-form;
+	/* color: $desc-headline;*/
+	// font-size: $font-form;
 	font-weight: $medium;
 	letter-spacing: 0.5px;
 	margin: 70px 0 35px 0;
 }
 .desc-subtitle {
-	color: $desc-color;
+	color: #000;
 }
 /*---Foto-block---*/
 .foto-block {
