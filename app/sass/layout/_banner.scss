@@ -15,6 +15,7 @@
 	line-height: 0.75;
 }
 .hero-cta {
+	margin-bottom: 50px;
 	color: #fff;
 		h1 {
 			font-size: $font-action;
@@ -31,7 +32,7 @@
 		}
 }
 .hero-form--wrapper {
-	margin: 50px auto;
+	margin: 0 auto;
 	max-width: 585px;
 }
 .hero-form--title {
