@@ -5,12 +5,12 @@
   padding: 1.125em 0;
 }
 .navbar-wrapper {
-  padding: 0 20px;
+  padding: 0 0.625em;
   overflow: hidden;
 }
 .header-logo {
   float: left;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .header-logo--link {
   display: block;
@@ -19,18 +19,18 @@
   background-image: url("../img/logo-2.svg");
   background-repeat: no-repeat;
 }
-.logo-link--text {
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  top: auto;
-  width: 1px;
-}
+/* .logo-link--text {*/
+/*   clip: rect(1px,1px,1px,1px);*/
+/*   height: 1px;*/
+/*   overflow: hidden;*/
+/*   position: absolute !important;*/
+/*   top: auto;*/
+/*   width: 1px;*/
+/* }*/
 .header-info {
   float: left;
   color: #b3cdfa;
-  font-size: 14px;
+  font-size: $font-mini;
   line-height: 20px;
 }
 .header-info--city,.header-info--phone {
@@ -39,19 +39,19 @@
 /* Menu*/
 .header-nav {
   float: right;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 .navbar-list--item {
   line-height: 39px;
   display: inline-block;
-  padding: 0 15px;
-    &:hover {border-bottom: 3px solid $green;}
+  padding: 0 10px;
+    /* &:hover {border-bottom: 3px solid $green;}*/
 }
 .navbar-list--link {
   font-family: $font-primary;
-  font-weight: $bold;
-  letter-spacing: 0.025em;
-  font-size: 14px;   
+  font-weight: $semibold;
+  /* letter-spacing: 0.025em;*/
+  font-size: $font-mini;   
   color: #fff;
     &:hover { color: $white-hidden;}
 }
@@ -86,13 +86,13 @@
 .btn--link {
   color: #fff;
   font-family: $font-primary;
-  font-weight: $bold;
-  font-size: 14px;
+  font-weight: $semibold;
+  font-size: $font-mini;
 }
 /*Toggle*/
 .navbar-toggle {
   display: none;
-  width: 22px;
+  width: 30px;
   height: 14px;
   position: relative;
   cursor: pointer;
@@ -105,126 +105,44 @@
     background-color: #fff;
   }
 }
-.menu-toggle--icon {
+.navbar-toggle--icon {
   &:nth-child(1) {
     top: 0px;}
 }
-.menu-toggle--icon {
+.navbar-toggle--icon {
   &:nth-child(2) {
     top: 6px;}
 }
-.menu-toggle--icon {
+.navbar-toggle--icon {
   &:nth-child(3) {
     top: 12px;}
 }
 /*-----Mobile header-----*/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .menu-block {
-     margin-right: 10px;
-  }
-  .menu-list--item {
-     padding: 0 10px;
-  }
-  .info-block {
-     padding: 20px 0 20px 10px;
-  }
-}
+
 @media (min-width: 768px) and (max-width: 991px) {
-  .logo-block--link {
-     width: 178px;
-     height: 27px;
-     border-right: none;
-  }
-  .info-block {
-     float: left;
-     padding: 20px 0 20px 7px;
-     color: #fff;
-     span {
-        font-weight: $thin;
-        font-size: 12px;
-      }
-  }
-  .menu-block {
-     margin-right: 5px;
-  }
-  .menu-list--item {
-     padding: 0 3px;
-    }
-  .menu-item--link {
-     font-weight: $bold;
-     font-size: 14px;    
-     text-transform: capitalize;
-     line-height: 68px;
-  }
-  .btn-block {
-     padding: 10px 12px;
-  }
-  .btn-block--link {
-     font-weight: $regular;
-     font-size: 12px;
-  }
+ .navbar-list {
+    display: none;
+ } 
+ .header-btn {
+    display: none;
+ }
+ .navbar-toggle {
+    display: block;
+ }
 }
 @media screen and (max-width: 767px) {
-  .btn-block,.info-block {
+  .header-btn,.header-info,.navbar-list {
      display: none;
   }
-  .menu-nav--list {
-    position: fixed;
-    top: 66px;
-    left: 100px;
-    right: 0px;
-    display: none;
-  }
-  .menu-item--link {
-    line-height: 30px;
-  }
-  .menu-list--item {
+  .navbar-toggle {
     display: block;
-    background-color: $primary-color;
-    padding: 10px;
-    border-bottom: 1px solid #fff;
-    height: 50px;
-  }
-  .menu-block--toggle {
-    display: block;
-  }
-  .menu-block {
-      padding: 25px 0;
-      float: right;
-  }
-  .logo-block {
-    padding: 18px 0;
-  }
+ }
 }
 @media screen and (max-width: 480px) {
-  .btn-block,.info-block {
-      display: none;
+  .header-btn,.header-info,.navbar-list {
+     display: none;
   }
-  .menu-nav--list {
-    position: fixed;
-    top: 66px;
-    left: 100px;
-    right: 0px;
-    display: none;
-  }
-  .menu-item--link {
-    line-height: 30px;
-  }
-  .menu-list--item {
+  .navbar-toggle {
     display: block;
-    background-color: $primary-color;
-    padding: 10px;
-    border-bottom: 1px solid #fff;
-    height: 50px;
-  }
-  .menu-block--toggle {
-    display: block;
-  }
-  .menu-block {
-      padding: 25px 0;
-      float: right;
-  }
-  .logo-block {
-    padding: 18px 0;
-  }
+ }
 }
