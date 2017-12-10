@@ -6,7 +6,7 @@
 	-webkit-background-size: cover;
 	        background-size: cover;
 }
-.hero--wrapper {
+.hero-wrapper {
 	padding-top: 170px;
 }	
 .hero-cta {
@@ -31,11 +31,11 @@
 			font-weight: $regular;
 		}
 }
-.hero-form--wrapper {
+.hero-form-wrapper {
 	margin: 0 auto;
 	max-width: 585px;
 }
-.hero-form--title {
+.hero-form-title {
 	padding: 0 52px;
 	text-align: center;
 	font-weight: $regular;
@@ -44,11 +44,10 @@
 	font-family: $font-sec;
 	line-height: 1.5;
 }
-.hero-form--input {
+.hero-form-input {
 	padding-top: 22px;
 }
-.form-input--phone {
-	/* margin-right: 19px;*/
+.hero-form-input--phone {
 	float: left;
 	min-width: 248px;
 	padding: 12px 130px 12px 10px;
@@ -59,7 +58,7 @@
 	-webkit-border-radius: 5px;
 	        border-radius: 5px;
 }
-.form-input--action {
+.hero-form-input--action {
 	float: right;
 	cursor: pointer;
 	padding: 12px 35px;
@@ -78,56 +77,42 @@
 		&:hover {background-color: #81e8b7;}        
 }
 /*-----Mobile banner-----*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.hero-cta {
+		h1 {
+			font-size: $font-action-tablet;
+		}
+		p {
+			font-size: $font-sec-action-tablet;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+  	.hero {
+		background: url("../img/banner-tablet.jpg") no-repeat;
+		height: 480px;
+	}
+	.hero-cta {
+		h1 {
+			font-size: $font-sec-action;
+		}
+		p {
+			font-size: $font-sec-action-tablet;
+		}
+	}
+}
 @media screen and (max-width: 480px) {
 	.hero {
 		background: url("../img/banner-mobile.jpg") no-repeat;
 		height: 450px;
 	}
-	.ban-main--content {
-        padding: 50px 5px 20px 5px;
-	}
-	.ban-main--title {
+	.hero-cta {
 		h1 {
-			font-size: 34px;
-			margin-bottom: 20px;
-			font-weight: $bold;
-			line-height: 1;
+			font-size: $font-action-tablet;
 		}
 		p {
-			font-size: 26px;
-			font-weight: $regular;
-			line-height: 1;
+			font-size: $font-sec-action-tablet;
 		}
-	}
-	.hero-form--title {
-		font-size: 16px;
-		color: $white-hidden;
-	}
-	.ban-field--phone {
-		float: none;
-		margin: 0 auto 10px;
-		width: 100%;
-	}
-	.ban-field--action {
-		float: none;
-		width: 100%;
-		padding: 12px 0;
-		text-align: center;
-	}
-}
-@media screen and (max-width: 767px) {
-	.hero {
-		background: url("../img/banner-mobile.jpg") no-repeat;
-		height: 450px;
-	}
-	.ban-main--content {
-        padding: 100px 5px 20px 5px;
-	}
-	.ban-field--phone {
-		min-width: 400px;
-	}
-	.ban-field--action {
-		min-width: 400px;
-		margin: 0 auto;
 	}
 }

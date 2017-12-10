@@ -103,15 +103,10 @@ a {
     margin: 35px 0 15px 0; } }
 
 /* Grid*/
-/* .page-container {*/
-/* 	max-width: 1240px;*/
-/* 	margin: 0 auto;*/
-/* 	padding-right: 20px;*/
-/* 	padding-left: 20px;*/
-/* }*/
 .page-container {
   max-width: 1220px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 10px; }
 
 .them-block {
   padding: 85px 0 85px; }
@@ -151,7 +146,6 @@ a {
   padding: 1.125em 0; }
 
 .navbar-wrapper {
-  padding: 0 0.625em;
   overflow: hidden; }
 
 .header-logo {
@@ -165,14 +159,6 @@ a {
   background-image: url("../img/logo-2.svg");
   background-repeat: no-repeat; }
 
-/* .logo-link--text {*/
-/*   clip: rect(1px,1px,1px,1px);*/
-/*   height: 1px;*/
-/*   overflow: hidden;*/
-/*   position: absolute !important;*/
-/*   top: auto;*/
-/*   width: 1px;*/
-/* }*/
 .header-info {
   float: left;
   color: #b3cdfa;
@@ -196,7 +182,6 @@ a {
 .navbar-list--link {
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-weight: 600;
-  /* letter-spacing: 0.025em;*/
   font-size: 14px;
   color: #fff; }
   .navbar-list--link:hover {
@@ -263,6 +248,8 @@ a {
 
 /*-----Mobile header-----*/
 @media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    padding: 0.75em; }
   .navbar-list {
     display: none; }
   .header-btn {
@@ -271,12 +258,16 @@ a {
     display: block; } }
 
 @media screen and (max-width: 767px) {
+  .header {
+    padding: 0.75em; }
   .header-btn, .header-info, .navbar-list {
     display: none; }
   .navbar-toggle {
     display: block; } }
 
 @media screen and (max-width: 480px) {
+  .header {
+    padding: 0.75em; }
   .header-btn, .header-info, .navbar-list {
     display: none; }
   .navbar-toggle {
@@ -290,7 +281,7 @@ a {
   -webkit-background-size: cover;
   background-size: cover; }
 
-.hero--wrapper {
+.hero-wrapper {
   padding-top: 170px; }
 
 .hero-cta {
@@ -313,11 +304,11 @@ a {
     font-family: "Montserrat", "Open Sans", sans-serif;
     font-weight: 400; }
 
-.hero-form--wrapper {
+.hero-form-wrapper {
   margin: 0 auto;
   max-width: 585px; }
 
-.hero-form--title {
+.hero-form-title {
   padding: 0 52px;
   text-align: center;
   font-weight: 400;
@@ -326,11 +317,10 @@ a {
   font-family: "Roboto", "Open Sans", sans-serif;
   line-height: 1.5; }
 
-.hero-form--input {
+.hero-form-input {
   padding-top: 22px; }
 
-.form-input--phone {
-  /* margin-right: 19px;*/
+.hero-form-input--phone {
   float: left;
   min-width: 248px;
   padding: 12px 130px 12px 10px;
@@ -341,7 +331,7 @@ a {
   -webkit-border-radius: 5px;
   border-radius: 5px; }
 
-.form-input--action {
+.hero-form-input--action {
   float: right;
   cursor: pointer;
   padding: 12px 35px;
@@ -357,46 +347,30 @@ a {
   /*         box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24)*/
   -webkit-border-radius: 5px;
   border-radius: 5px; }
-  .form-input--action:hover {
+  .hero-form-input--action:hover {
     background-color: #81e8b7; }
 
 /*-----Mobile banner-----*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-cta h1 {
+    font-size: 46px; }
+  .hero-cta p {
+    font-size: 36px; } }
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background: url("../img/banner-tablet.jpg") no-repeat;
+    height: 480px; }
+  .hero-cta h1 {
+    font-size: 40px; }
+  .hero-cta p {
+    font-size: 36px; } }
+
 @media screen and (max-width: 480px) {
   .hero {
     background: url("../img/banner-mobile.jpg") no-repeat;
     height: 450px; }
-  .ban-main--content {
-    padding: 50px 5px 20px 5px; }
-  .ban-main--title h1 {
-    font-size: 34px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    line-height: 1; }
-  .ban-main--title p {
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 1; }
-  .hero-form--title {
-    font-size: 16px;
-    color: #e6e6e6; }
-  .ban-field--phone {
-    float: none;
-    margin: 0 auto 10px;
-    width: 100%; }
-  .ban-field--action {
-    float: none;
-    width: 100%;
-    padding: 12px 0;
-    text-align: center; } }
-
-@media screen and (max-width: 767px) {
-  .hero {
-    background: url("../img/banner-mobile.jpg") no-repeat;
-    height: 450px; }
-  .ban-main--content {
-    padding: 100px 5px 20px 5px; }
-  .ban-field--phone {
-    min-width: 400px; }
-  .ban-field--action {
-    min-width: 400px;
-    margin: 0 auto; } }
+  .hero-cta h1 {
+    font-size: 46px; }
+  .hero-cta p {
+    font-size: 36px; } }
