@@ -108,6 +108,10 @@ a {
   margin: 0 auto;
   padding: 0 10px; }
 
+.header-mobile-row {
+  padding: 0 20px;
+  margin: 0 auto; }
+
 .them-block {
   padding: 85px 0 85px; }
 
@@ -140,13 +144,16 @@ a {
   box-sizing: border-box; }
 
 /*-----Header-----*/
+.header-container {
+  background-color: #3871d3; }
+
 .header {
-  background-color: #3871d3;
-  border-bottom: 1px solid #3268c3;
-  padding: 1.125em 0; }
+  padding: 1.125em 0;
+  border-bottom: 1px solid #3268c3; }
 
 .navbar-wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .header-logo {
   float: left;
@@ -171,7 +178,10 @@ a {
 /* Menu*/
 .header-nav {
   float: right;
-  margin-right: 5px; }
+  /* position: absolute;*/
+  /* top: 13px;*/
+  /* right: 10px;*/
+  /* cursor: pointer;*/ }
 
 .navbar-list--item {
   line-height: 39px;
@@ -186,6 +196,32 @@ a {
   color: #fff; }
   .navbar-list--link:hover {
     color: #e6e6e6; }
+
+/*Navbar-mobile*/
+.header-mobile {
+  position: relative;
+  display: none;
+  border-bottom: 1px solid #3268c3;
+  color: #e6e6e6;
+  font-size: 14px; }
+
+.phone-one {
+  float: left;
+  padding: 8px 0; }
+
+.phone-two {
+  float: right;
+  padding: 8px 0; }
+
+.mobile-icon {
+  position: absolute;
+  background-image: url("../img/phone.svg");
+  width: 50px;
+  height: 50px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  top: -10px; }
 
 /* Button top*/
 .btn-top {
@@ -222,6 +258,12 @@ a {
   font-weight: 600;
   font-size: 14px; }
 
+.navbar-row {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: pointer; }
+
 /*Toggle*/
 .navbar-toggle {
   display: none;
@@ -248,29 +290,29 @@ a {
 
 /*-----Mobile header-----*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .header {
-    padding: 0.75em; }
   .navbar-list {
     display: none; }
   .header-btn {
     display: none; }
   .navbar-toggle {
-    display: block; } }
+    display: block; }
+  .header-mobile {
+    display: none; } }
 
 @media screen and (max-width: 767px) {
-  .header {
-    padding: 0.75em; }
   .header-btn, .header-info, .navbar-list {
     display: none; }
   .navbar-toggle {
-    display: block; } }
+    display: block; }
+  .header-mobile {
+    display: none; } }
 
 @media screen and (max-width: 480px) {
-  .header {
-    padding: 0.75em; }
   .header-btn, .header-info, .navbar-list {
     display: none; }
   .navbar-toggle {
+    display: block; }
+  .header-mobile {
     display: block; } }
 
 /* Banner block*/

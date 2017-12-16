@@ -1,11 +1,14 @@
 /*-----Header-----*/
+.header-container {
+   background-color: $primary-color;
+}
 .header {
-  background-color: $primary-color;
-  border-bottom: 1px solid $line-header;
   padding: 1.125em 0;
+  border-bottom: 1px solid $line-header;
 }
 .navbar-wrapper {
   overflow: hidden;
+  position: relative;
 }
 .header-logo {
   float: left;
@@ -30,7 +33,10 @@
 /* Menu*/
 .header-nav {
   float: right;
-  margin-right: 5px;
+  /* position: absolute;*/
+  /* top: 13px;*/
+  /* right: 10px;*/
+  /* cursor: pointer;*/
 }
 .navbar-list--item {
   line-height: 39px;
@@ -44,6 +50,32 @@
   font-size: $font-mini;   
   color: #fff;
     &:hover { color: $white-hidden;}
+}
+/*Navbar-mobile*/
+.header-mobile {
+    position: relative;
+    display: none;
+    border-bottom: 1px solid $line-header;
+    color: $white-hidden;
+    font-size: $font-mini;
+}
+.phone-one {
+  float: left;
+  padding: 8px 0;
+}
+.phone-two {
+  float: right;
+  padding: 8px 0;
+}
+.mobile-icon {
+  position: absolute;
+  background-image: url("../img/phone.svg");
+  width: 50px;
+  height: 50px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  top: -10px;
 }
 /* Button top*/
 .btn-top {
@@ -79,6 +111,12 @@
   font-weight: $semibold;
   font-size: $font-mini;
 }
+.navbar-row {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: pointer;
+}
 /*Toggle*/
 .navbar-toggle {
   display: none;
@@ -110,38 +148,38 @@
 /*-----Mobile header-----*/
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .header {
-    padding: 0.75em;
+  .navbar-list {
+    display: none;
+  } 
+  .header-btn {
+    display: none;
   }
- .navbar-list {
-    display: none;
- } 
- .header-btn {
-    display: none;
- }
- .navbar-toggle {
+  .navbar-toggle {
     display: block;
- }
+  }
+  .header-mobile {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
-  .header {
-    padding: 0.75em;
-  }
   .header-btn,.header-info,.navbar-list {
-     display: none;
+    display: none;
   }
   .navbar-toggle {
     display: block;
- }
+  }
+  .header-mobile {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
-  .header {
-    padding: 0.75em;
-  }
   .header-btn,.header-info,.navbar-list {
      display: none;
   }
   .navbar-toggle {
     display: block;
- }
+  }
+  .header-mobile {
+    display: block;
+  }
 }
