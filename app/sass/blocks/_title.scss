@@ -1,0 +1,43 @@
+/*---Title-block---*/
+.headline {
+	text-align: center;
+	margin-bottom: 70px;
+	text-transform: uppercase;
+	color: $text-title;
+	font-family: $font-primary;
+	font-weight: $medium;
+}
+.headline-title {
+	font-size: $font-title;
+	margin-bottom: 30px;
+}	
+.headline-subtitle {
+	font-size: $font-title-sec;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.headline-title {
+		font-size: 34px;
+	}
+	.headline-subtitle {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.headline-title {
+		font-size: 30px;
+	}
+	.headline-subtitle {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.headline-title {
+		font-size: 26px;
+	}
+	.headline-subtitle {
+		display: none;
+	}
+    .headline {
+		margin-bottom: 40px;
+	}		
+}
