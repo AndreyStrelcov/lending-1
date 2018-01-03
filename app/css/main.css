@@ -139,42 +139,69 @@ a {
   display: flex;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.intro-row-product {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.intro-row-icon {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
 .intro-column {
   text-align: center;
-  width: 30%; }
+  width: 32%; }
 
-.svg-container {
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
+.block-shadow {
+  -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.14); }
+
+.svg-size {
   height: 145px;
-  margin: 0 auto 1.875em;
   width: 145px; }
 
-.img-container {
+.img-size {
+  height: 450px;
+  /* width: 380px;*/ }
+
+.image-container {
   -webkit-background-size: 100% 100%;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 450px;
-  margin: 0 auto 1.875em;
-  width: 380px; }
+  margin: 0 auto 1.875em; }
 
 .subtitle {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-family: "Montserrat", "Open Sans", sans-serif;
-  color: #3871d3;
   font-weight: 600; }
 
+.sub-product {
+  color: #3871d3; }
+
+.sub-win {
+  background-color: #85aae9;
+  color: #ffffff;
+  padding: 25px 0; }
+
 .description {
-  color: #969EA2;
+  color: #6b707b;
   font-size: 17px;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.brd {
+  border-top: 1px solid #f5f5f6;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.desc-prod {
+  padding-bottom: 30px; }
 
 @media screen and (max-width: 767px) {
   .intro-column {
@@ -534,26 +561,29 @@ a {
 .benefit-container {
   background-color: #f6f8fb; }
 
-.svg-quality {
+.icon-quality {
   background-image: url("../img/quality.svg"); }
 
-.svg-montag {
+.icon-montag {
   background-image: url("../img/montag.svg"); }
 
-.svg-zamer {
+.icon-zamer {
   background-image: url("../img/zamer.svg"); }
 
 .windows-container {
   background-color: #ffffff; }
 
 .img-standart {
-  background-image: url("../img/foto-58(380-450).jpg"); }
+  background-image: url("../img/foto-58(380-450).jpg");
+  margin-bottom: 0; }
 
 .img-optima {
-  background-image: url("../img/foto-70(380-450).jpg"); }
+  background-image: url("../img/foto-70(380-450).jpg");
+  margin-bottom: 0; }
 
 .img-premium {
-  background-image: url("../img/foto-88(380-450).jpg"); }
+  background-image: url("../img/foto-88(380-450).jpg");
+  margin-bottom: 0; }
 
 .balkon-container {
   background-color: #f6f8fb; }
@@ -566,3 +596,15 @@ a {
 
 .img-francuz {
   background-image: url("../img/balkon-francuz.jpg"); }
+
+.doors-container {
+  background-color: #ffffff; }
+
+.img-pvs {
+  background-image: url("../img/doors-pvs.jpg"); }
+
+.img-alum {
+  background-image: url("../img/doors-alum.jpg"); }
+
+.img-metal {
+  background-image: url("../img/doors-metal.jpg"); }
