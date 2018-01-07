@@ -42,10 +42,12 @@
 	margin: 0 auto 1.875em;
 }
 .subtitle {
-	margin-bottom: 20px;
 	text-transform: uppercase;
 	font-family: $font-primary;
 	font-weight: $semibold;
+}
+.subtitle--wrapper {
+	margin-bottom: 20px;
 }
 .subtitle--product {
     color: $primary-color;
