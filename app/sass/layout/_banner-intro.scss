@@ -1,0 +1,39 @@
+.banner-wrapper {
+	padding: 70px 0;
+}
+.form {
+	margin: 0 auto;
+	max-width: 455px;
+
+}
+.form-order-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.banner-button {
+	padding-top: 15px;
+}
+.button-action--banner {
+	padding: 12px 69px;
+}
+.input--banner {
+	padding: 12px;
+}
+.form-name {
+	margin-right: 5px;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 225px;
+	    -ms-flex: 1 0 225px;
+	        flex: 1 0 225px;
+}
+.form-phone {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 225px;
+	    -ms-flex: 1 0 225px;
+	        flex: 1 0 225px;
+}

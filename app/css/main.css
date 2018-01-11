@@ -472,10 +472,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.form-input--phone-int {
-  margin-right: 5px;
-  min-width: 248px;
-  padding: 12px 130px 12px 10px;
+.input {
   color: #333c4e;
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 14px;
@@ -483,24 +480,31 @@ a {
   -webkit-border-radius: 5px;
   border-radius: 5px; }
 
-.form-input--action-int {
+.input--hero {
+  margin-right: 5px;
+  min-width: 248px;
+  padding: 12px 130px 12px 10px; }
+
+.button {
   text-align: center;
   cursor: pointer;
-  padding: 12px 35px;
   color: #fff;
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background-color: #4acc8e;
   border: none;
-  /* -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24);*/
-  /*         box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24)*/
   -webkit-border-radius: 5px;
   border-radius: 5px; }
-  .form-input--action-int:hover {
-    background-color: #81e8b7; }
+
+.button-action {
+  background-color: #4acc8e; }
+  .button-action:hover {
+    background-color: #71deaa; }
+
+.button-action--hero {
+  padding: 12px 35px; }
 
 /*-----Mobile banner-----*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -529,10 +533,10 @@ a {
     font-weight: 300;
     font-size: 16px;
     line-height: 1; }
-  .form-input--phone-int {
+  .input--hero {
     padding: 12px 200px 12px 10px;
     margin: 0 0 10px; }
-  .form-input--action-int {
+  .button-action--hero {
     padding: 12px 120px; } }
 
 @media screen and (max-width: 480px) {
@@ -557,10 +561,10 @@ a {
     line-height: 1; }
   .form-input {
     padding-top: 15px; }
-  .form-input--phone-int {
+  .input--hero {
     padding: 12px 90px 12px 10px;
     margin: 0 0 10px; }
-  .form-input--action-int {
+  .button-action--hero {
     padding: 12px 65px; } }
 
 .benefit-container {
@@ -611,6 +615,44 @@ td {
 .img-francuz {
   background-image: url("../img/balkon-francuz.jpg"); }
 
+.banner-wrapper {
+  padding: 70px 0; }
+
+.form {
+  margin: 0 auto;
+  max-width: 455px; }
+
+.form-order-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.banner-button {
+  padding-top: 15px; }
+
+.button-action--banner {
+  padding: 12px 69px; }
+
+.input--banner {
+  padding: 12px; }
+
+.form-name {
+  margin-right: 5px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 225px;
+  -ms-flex: 1 0 225px;
+  flex: 1 0 225px; }
+
+.form-phone {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 225px;
+  -ms-flex: 1 0 225px;
+  flex: 1 0 225px; }
+
 .doors-container {
   background-color: #ffffff; }
 
@@ -622,6 +664,9 @@ td {
 
 .img-metal {
   background-image: url("../img/doors-metal.jpg"); }
+
+.reviews-container {
+  background-color: #f6f8fb; }
 
 .map-container {
   background-color: #f6f8fb; }
