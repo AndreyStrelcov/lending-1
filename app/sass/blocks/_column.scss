@@ -45,17 +45,17 @@
 	text-transform: uppercase;
 	font-family: $font-primary;
 	font-weight: $semibold;
-}
-.subtitle--wrapper {
+	&--wrapper {
 	margin-bottom: 20px;
-}
-.subtitle--product {
+    }
+    &--product {
     color: $primary-color;
-}
-.subtitle--win {
+    }
+    &--win {
 	background-color: $windows-block;
 	color: #ffffff;
 	padding: 25px 0;
+    }
 }
 .description {
 	color: $text-content;
@@ -63,15 +63,16 @@
 	font-weight: $light;
 	padding-right: 10px;
 	padding-left: 10px;
-}
-.description--border {
+	&--prod {
+		padding-bottom: 30px;
+    }
+    &--border {
 	border-top: 1px solid #f5f5f6;
 	padding-top: 40px;
 	padding-bottom: 40px;
+    }
 }
-.description--prod {
-	padding-bottom: 30px;
-}
+
 @media screen and (max-width: 767px) {
 	.intro-column {
     	display: -webkit-box;

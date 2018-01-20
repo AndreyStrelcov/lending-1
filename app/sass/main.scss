@@ -1,17 +1,19 @@
-@import "base/_reset";
-@import "base/_vars";
-@import "base/_grid";
-@import "base/_font";
-@import "base/_tools";
-@import "blocks/_title";
-@import "blocks/_column";
-@import "layout/_header";
-@import "layout/_banner";
-@import "layout/_benefit";
-@import "layout/_windows";
-@import "layout/_balkon";
-@import "layout/_banner-intro";
-@import "layout/_doors";
-@import "layout/_reviews";
-@import "layout/_contact";
-@import "layout/_map";
+@import "base/reset";
+@import "base/vars";
+@import "base/grid";
+@import "base/font";
+@import "base/tools";
+
+@import "blocks/title";
+@import "blocks/column";
+
+@import "layout/header";
+@import "layout/banner";
+@import "layout/benefit";
+@import "layout/windows";
+@import "layout/balkon";
+@import "layout/banner-intro";
+@import "layout/doors";
+@import "layout/reviews";
+@import "layout/contact";
+@import "layout/map";
