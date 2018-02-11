@@ -26,6 +26,16 @@
 .column-two {
 	width: 49%;
 }
+.intro-column-reviews {
+	width: 32%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	border: 1px solid $white-hidden;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
 .reviews-wrapper {
 	margin-bottom: -30px;
 }

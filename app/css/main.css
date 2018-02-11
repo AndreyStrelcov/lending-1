@@ -162,6 +162,16 @@ a {
 .column-two {
   width: 49%; }
 
+.intro-column-reviews {
+  width: 32%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
 .reviews-wrapper {
   margin-bottom: -30px; }
 
@@ -699,8 +709,8 @@ td {
   background-color: #f6f8fb; }
 
 .svg-contact {
-  width: 75px;
-  height: 50px; }
+  width: 45px;
+  height: 45px; }
 
 .icon-mail {
   background-image: url("../img/mail.svg"); }
@@ -712,7 +722,7 @@ td {
   background-image: url("../img/place-contact.svg"); }
 
 .map-container {
-  background-color: #f6f8fb; }
+  background-color: #ffffff; }
 
 #map {
   width: 100%;
